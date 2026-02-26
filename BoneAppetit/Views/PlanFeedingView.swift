@@ -19,25 +19,36 @@ struct PlanFeedingView: View {
                 }
                 .pickerStyle(.segmented)
                 
-                HStack {
-                    VStack(alignment: .leading){
-                        Text("7AM")
-                            .font(.title3)
-                            .bold()
-                        Text("Daily")
-                    }
-                    Spacer()
-                    
-                    VStack (alignment:.trailing){
-                        Text("Kibble")
-                            .font(.title3)
-                            .bold()
-                        Text("2 Scoops")
-                    }
-                }
-                .padding()
-                .border(.black)
-                
+                FeedingView(
+                    scheduledTime: "7 AM",
+                    foodName: "Kibble",
+                    amountOfFood: "2 scoops",
+                    repeatingTime: "Daily"
+                )
+                FeedingView(
+                    scheduledTime: "11 AM",
+                    foodName: "Kibble",
+                    amountOfFood: "2 scoops",
+                    repeatingTime: "Daily"
+                )
+                FeedingView(
+                    scheduledTime: "3 PM",
+                    foodName: "Kibble",
+                    amountOfFood: "2 scoops",
+                    repeatingTime: "Daily"
+                )
+                FeedingView(
+                    scheduledTime: "7 PM",
+                    foodName: "Kibble",
+                    amountOfFood: "2 scoops",
+                    repeatingTime: "Daily"
+                )
+                FeedingView(
+                    scheduledTime: "August",
+                    foodName: "Puppucino",
+                    amountOfFood: "1 cup",
+                    repeatingTime: "Anuually"
+                )
                 Spacer()
         }
         .padding()

@@ -10,6 +10,7 @@
 		392447342F50898F0070B29A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392447302F50898F0070B29A /* Assets.xcassets */; };
 		392447352F50898F0070B29A /* BoneAppetitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392447312F50898F0070B29A /* BoneAppetitApp.swift */; };
 		392447362F50898F0070B29A /* PlanFeedingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392447322F50898F0070B29A /* PlanFeedingView.swift */; };
+		392447392F50941B0070B29A /* FeedingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392447382F50941B0070B29A /* FeedingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		392447302F50898F0070B29A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392447312F50898F0070B29A /* BoneAppetitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneAppetitApp.swift; sourceTree = "<group>"; };
 		392447322F50898F0070B29A /* PlanFeedingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanFeedingView.swift; sourceTree = "<group>"; };
+		392447382F50941B0070B29A /* FeedingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 				392447302F50898F0070B29A /* Assets.xcassets */,
 				392447312F50898F0070B29A /* BoneAppetitApp.swift */,
 				392447372F50899D0070B29A /* Views */,
-				392447322F50898F0070B29A /* PlanFeedingView.swift */,
 			);
 			path = BoneAppetit;
 			sourceTree = "<group>";
@@ -60,6 +61,8 @@
 		392447372F50899D0070B29A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				392447322F50898F0070B29A /* PlanFeedingView.swift */,
+				392447382F50941B0070B29A /* FeedingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392447392F50941B0070B29A /* FeedingView.swift in Sources */,
 				392447352F50898F0070B29A /* BoneAppetitApp.swift in Sources */,
 				392447362F50898F0070B29A /* PlanFeedingView.swift in Sources */,
 			);
