@@ -19,6 +19,25 @@ struct PlanFeedingView: View {
                 }
                 .pickerStyle(.segmented)
                 
+                HStack {
+                    VStack(alignment: .leading){
+                        Text("7AM")
+                            .font(.title3)
+                            .bold()
+                        Text("Daily")
+                    }
+                    Spacer()
+                    
+                    VStack (alignment:.trailing){
+                        Text("Kibble")
+                            .font(.title3)
+                            .bold()
+                        Text("2 Scoops")
+                    }
+                }
+                .padding()
+                .border(.black)
+                
                 Spacer()
         }
         .padding()
