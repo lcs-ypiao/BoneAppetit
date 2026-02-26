@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct PlanFeedingView: View {
+    @State private var selection = "Planned Feeding"
     var body: some View {
         NavigationStack {
             VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundStyle(.tint)
-                Text("Hello, world!")
+                Picker("Current Selection",selection: $selection) {
+                    Text("Meals").tag("Meals")
+                    Text("Planned Feedings").tag("Planned Feedings")
+                    Text("HIstory").tag("History")
+                }
+                .pickerStyle(.segmented)
+                
+                Spacer()
         }
         .padding()
         .navigationTitle("Piper")
