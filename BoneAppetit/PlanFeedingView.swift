@@ -9,13 +9,38 @@ import SwiftUI
 
 struct PlanFeedingView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundStyle(.tint)
+                Text("Hello, world!")
         }
         .padding()
+        .navigationTitle("Piper")
+        .toolbar{
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+
+                } label: {
+                    Text("\(Image(systemName :"chevron.backward"))Pets")
+                }
+                
+                
+            }
+            
+            
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+
+                } label: {
+                    Text("\(Image(systemName :"plus.circle"))")
+                }
+                
+                
+            }
+        }
+        }
     }
 }
 
